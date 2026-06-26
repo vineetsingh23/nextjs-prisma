@@ -1,4 +1,5 @@
 import Navbar from './components/navbar';
+import Footer from './components/footer';
 import './globals.css';
 import { inter,lusitana } from '@/app/ui/fonts';
  
@@ -12,6 +13,7 @@ export default function RootLayout({
       <body className={`${inter.className} ${lusitana.className}  antialiased`}>
         <Navbar/>
         {children}</body>
+        <Footer/>
     </html>
   );
 }
